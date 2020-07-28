@@ -20,8 +20,7 @@ yarn package-mac
 After this you can open the dmg file and install locally
 
 
-## Packaging for Production
-Usage:
+## Usage:
 1. Type gif title
 2. either click or Enter + Tab + Number of wanted gif
 3. ???
