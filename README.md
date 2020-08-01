@@ -22,9 +22,6 @@ After this you can open the dmg file and install locally
 
 ## Usage:
 1. Type gif title
-2. either click or Enter + Tab + Number of wanted gif
+2. Click "Option" key for keyboard acceleration
 3. ???
 4. profit
-
-stage 2 will be simplified for keyboard usage
-

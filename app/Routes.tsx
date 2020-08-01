@@ -5,6 +5,7 @@ import routes from './constants/routes.json';
 import App from './containers/App';
 import HomePage from './containers/HomePage';
 import { HotKeys } from 'react-hotkeys';
+import { ToastProvider } from 'react-toast-notifications';
 
 // Lazily load routes and code split with webpacck
 const LazyCounterPage = React.lazy(() =>
@@ -19,6 +20,7 @@ const CounterPage = (props: Record<string, any>) => (
 
 
 const keyMap = {
+  OPTION: 'option',
   SELECT_1: '1',
   SELECT_2: '2',
   SELECT_3: '3',
@@ -35,10 +37,12 @@ export default function Routes() {
   return (
     <HotKeys keyMap={keyMap}>
     <App>
+      <ToastProvider placement="bottom-center">
       <Switch>
         <Route path={routes.COUNTER} component={CounterPage} />
         <Route path={routes.HOME} component={HomePage} />
       </Switch>
+      </ToastProvider>
     </App>
     </HotKeys>
   );
