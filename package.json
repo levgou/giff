@@ -82,6 +82,9 @@
         "msi"
       ]
     },
+    "mac": {
+      "icon": "./resources/doom_guy_icon.png"
+    },
     "linux": {
       "target": [
         "deb",
